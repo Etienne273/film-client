@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  serverUrl: 'https://angular-films.herokuapp.com/api/v1'
+  serverUrl: 'https://node-mongodb-server.herokuapp.com'
 };
