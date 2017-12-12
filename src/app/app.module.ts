@@ -19,9 +19,9 @@ import { FilmItemComponent } from './components/films/film-list/film-item/film-i
 import { FilmDetailComponent } from './components/films/film-detail/film-detail.component'
 import { FilmEditComponent } from './components/films/film-edit/film-edit.component'
 
-import { HallService } from './services/hall.service';
-import { HallsComponent } from './components/halls/hall.component';
-import { HallEditComponent } from './components/halls/hall-edit/hall-edit.component' 
+import { ZaalService } from './services/zaal.service';
+import { ZalenComponent } from './components/zalen/zaal.component';
+import { ZaalEditComponent } from './components/zalen/zaal-edit/zaal-edit.component' 
 
 @NgModule({
   declarations: [
@@ -35,8 +35,8 @@ import { HallEditComponent } from './components/halls/hall-edit/hall-edit.compon
     FilmItemComponent,
     FilmDetailComponent,
     FilmEditComponent,
-    HallsComponent,
-    HallEditComponent
+    ZalenComponent,
+    ZaalEditComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +48,7 @@ import { HallEditComponent } from './components/halls/hall-edit/hall-edit.compon
   providers: [
     UserService,
     FilmService,
-    HallService
+    ZaalService
   ],
   bootstrap: [AppComponent]
 })

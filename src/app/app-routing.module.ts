@@ -5,7 +5,7 @@ import { FilmsComponent } from './components/films/films.component'
 import { FilmDetailComponent } from './components/films/film-detail/film-detail.component'
 import { FilmStartComponent } from './components/films/film-start/film-start.component'
 import { FilmEditComponent } from './components/films/film-edit/film-edit.component'
-import { HallsComponent } from './components/halls/hall.component';
+import { ZalenComponent } from './components/zalen/zaal.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/films', pathMatch: 'full'}, 
@@ -15,7 +15,7 @@ const appRoutes: Routes = [
     { path: ':id', component: FilmDetailComponent },
     { path: ':id/edit' , component: FilmEditComponent }
   ] },
-  { path: 'halls', component: HallsComponent},
+  { path: 'zalen', component: ZalenComponent},
   { path: 'dashboard', component: DashboardComponent}
 ];
 
