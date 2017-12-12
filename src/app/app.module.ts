@@ -23,6 +23,9 @@ import { ZaalService } from './services/zaal.service';
 import { ZalenComponent } from './components/zalen/zaal.component';
 import { ZaalEditComponent } from './components/zalen/zaal-edit/zaal-edit.component' 
 
+import { VoorstellingService } from './services/voorstelling.service';
+import { VoorstellingComponent } from './components/voorstelling/voorstelling.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,8 @@ import { ZaalEditComponent } from './components/zalen/zaal-edit/zaal-edit.compon
     FilmDetailComponent,
     FilmEditComponent,
     ZalenComponent,
-    ZaalEditComponent
+    ZaalEditComponent,
+    VoorstellingComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,8 @@ import { ZaalEditComponent } from './components/zalen/zaal-edit/zaal-edit.compon
   providers: [
     UserService,
     FilmService,
-    ZaalService
+    ZaalService,
+    VoorstellingService
   ],
   bootstrap: [AppComponent]
 })

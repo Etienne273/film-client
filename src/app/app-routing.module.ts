@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './components/dashboard/dashboard.component'
+//import { DashboardComponent } from './components/dashboard/dashboard.component'
 import { FilmsComponent } from './components/films/films.component'
 import { FilmDetailComponent } from './components/films/film-detail/film-detail.component'
 import { FilmStartComponent } from './components/films/film-start/film-start.component'
 import { FilmEditComponent } from './components/films/film-edit/film-edit.component'
 import { ZalenComponent } from './components/zalen/zaal.component';
+import { VoorstellingComponent } from './components/voorstelling/voorstelling.component'
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/films', pathMatch: 'full'}, 
@@ -16,7 +17,8 @@ const appRoutes: Routes = [
     { path: ':id/edit' , component: FilmEditComponent }
   ] },
   { path: 'zalen', component: ZalenComponent},
-  { path: 'dashboard', component: DashboardComponent}
+  //{ path: 'dashboard', component: DashboardComponent},
+  { path: 'voorstellingen', component: VoorstellingComponent}
 ];
 
 @NgModule({
