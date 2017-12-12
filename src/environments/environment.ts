@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  serverUrl: 'https://angular-films.herokuapp.com/'
+  serverUrl: 'https://angular-films.herokuapp.com/api/v1'
 };
