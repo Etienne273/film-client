@@ -1,0 +1,25 @@
+<div class="page-header">
+    <h1>{{title}}</h1>
+  </div>
+  
+  <div *ngIf="voorstellingen" class="col-sm-6">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <td>Nr</td>
+          <td>Naam</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let voorstelling of voorstellingen, let i = index">
+          <td>{{i+1}}</td>
+          <td>{{voorstelling.name}}</td>
+          <td>{{voorstelling.description}}</td>
+          <td>{{voorstelling.imagePath}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="!voorstellingen">
+    Er zijn geen voorstellingen gevonden.
+  </div>
