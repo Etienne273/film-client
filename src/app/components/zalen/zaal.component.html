@@ -1,0 +1,17 @@
+<div class="row">
+        <div class="col-xs-10">
+          <app-zaal-edit></app-zaal-edit>
+          <hr>
+          <ul class="list-group">
+            <a
+              class="list-group-item"
+              style="cursor: pointer"
+              *ngFor="let zaal of zalen; let i = index"
+              (click)="onEditItem(i)"
+            >
+              {{ zaal.name }} ({{ zaal.description }})
+            </a>
+          </ul>
+        </div>
+      </div>
+      
