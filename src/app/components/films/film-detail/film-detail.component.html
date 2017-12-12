@@ -1,0 +1,40 @@
+<div *ngIf="film" class="row">
+  <div  class="col-xs-12">
+    <img
+      [src]="film?.imagePath"
+      alt="{{ film?.name }}"
+      class="img-responsive"
+      style="max-height: 300px;">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ film?.name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div
+      class="btn-group"
+      appDropdown>
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle">
+        Manage Film <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a (click)="onEditFilm()" style='cursor: pointer;' >Edit Film</a></li>
+        <li><a (click)="onDeleteFilm()" style='cursor: pointer;' >Delete Film</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    {{ film?.description }}
+  </div>
+</div>
+<div *ngIf="!film">
+  er zijn geen films
+</div>
+      

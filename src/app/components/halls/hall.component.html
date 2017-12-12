@@ -1,0 +1,17 @@
+<div class="row">
+        <div class="col-xs-10">
+          <app-hall-edit></app-hall-edit>
+          <hr>
+          <ul class="list-group">
+            <a
+              class="list-group-item"
+              style="cursor: pointer"
+              *ngFor="let hall of halls; let i = index"
+              (click)="onEditItem(i)"
+            >
+              {{ hall.name }} ({{ hall.description }})
+            </a>
+          </ul>
+        </div>
+      </div>
+      
